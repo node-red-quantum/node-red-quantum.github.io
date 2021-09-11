@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-GB' }}">
+  <head>
+    <meta charset="UTF-8">
+    {% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#8A3FFC">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+
+        <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
+
+        <nav class="site-nav">
+          <a class="page-link" href="install.html">Install</a>
+          <a class="page-link" href="demo.html">Demo</a>
+          <a class="page-link" href="team.html">Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <h1 class="project-name">{{ site.title }}</h1>
+      <h2 class="project-tagline">{{ site.description }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.npm_url }}" class="btn">View on npm</a>
+        <a href="{{ site.github.red_url }}" class="btn">View on Node-RED</a>
+      {% endif %}
+    </section>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-credits"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is licensed under the <a href="{{ site.github.license_url }}">{{ site.github.license_name }}</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
