@@ -25,6 +25,7 @@ quantum or their goals - whether it be education, optimisation, or research.
 
 ## What was Node-RED Quantum built from?
 Node-RED Quantum is the product of combining two key technologies: Node-RED and Qiskit.
+
 [Node-RED](https://nodered.org/) is an open source, flow-based development environment which runs in the browser
 and allows users to create visual representations of programs by dragging and dropping nodes
 and connecting them together to form flows. Each node in Node-RED encapsulates JavaScript
