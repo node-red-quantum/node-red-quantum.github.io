@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## What is Node-RED Quantum
+## What is Node-RED Quantum?
 Node-RED Quantum is a library which allows users to build quantum circuits visually using
 the Node-RED platform. This project is intended to bring quantum functionality to Node-RED,
 with the goal of improving the accessibility of quantum computing for non-specialists by
@@ -23,7 +23,7 @@ receive the resulting quantum output for use in their classical programs. Hence,
 people to benefit from the power of quantum computing, regardless of their experience with
 quantum or their goals - whether it be education, optimisation, or research. 
 
-## What was Node-RED Quantum built from?
+## What Was Node-RED Quantum Built From?
 Node-RED Quantum is the product of combining two key technologies: Node-RED and Qiskit.
 
 [Node-RED](https://nodered.org/) is an open source, flow-based development environment which runs in the browser
@@ -37,12 +37,12 @@ programming expertise.
 programs and running them on quantum machines or simulators. Using Qiskit, developers can
 write programs which manipulate the qubits on the [IBM Quantum](https://quantum-computing.ibm.com/) qubit machines and form quantum programs for solving difficult computational problems.
 
-## How does Node-RED Quantum work?
+## How Does Node-RED Quantum Work?
 In the simplest terms, Node-RED Quantum acts as a wrapper for Qiskit code. Using the
 quantum nodes creates a Qiskit script equivalent to the visual representation of the flow, which
 is executed in a Python shell instance. This is illustrated in the diagram below.
 
-![Architecture Diagram](images/ArchitectureDiagram.png)
+![Architecture Diagram](images/architecture-diagram.png)
 
 The Node-RED Quantum library contains definitions for each node, which dictate how they
 will be visually represented in Node-RED and the functionality that will be executed when
@@ -53,7 +53,7 @@ Once the output nodes’ code snippets are executed, the result is returned by t
 and displayed to the user within the Node-RED interface. Using a range of provided nodes, the
 user can generate multiple outputs from the quantum circuit.
 
-![Quantum Random Number Generator](images/RandomNumberGenerator.png)
+![Quantum Random Number Generator](images/random-number-generator.png)
 
 The node library consists of circuit initialisation nodes for starting the quantum circuit and
 defining its structure; quantum gate nodes which apply quantum gate operations to the qubits
@@ -73,8 +73,7 @@ allowing users to utilise quantum computing functionality without needing to und
 how the internal implementations work. They can simply connect their input to the nodes and
 receive the output.
 
-## How can Node-RED Quantum be improved?
-
+## How Can Node-RED Quantum Be Improved?
 When considering the goals for Node-RED Quantum and its current capabilities, there is
 potential for further work by implementing nodes for existing quantum algorithms available in
 Qiskit, such as the chemistry algorithms, optimisation algorithms, and machine learning
